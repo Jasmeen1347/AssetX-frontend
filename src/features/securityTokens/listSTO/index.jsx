@@ -285,7 +285,7 @@ function ListSTOModel(props) {
                             let listSTOApiData = {
                                 stoAddress: data?.stoToken,
                                 baseAddress: data?.baseToken,
-                                image: data?.launchpadImage,
+                                image: "https://amaranth-impossible-crocodile-354.mypinata.cloud/ipfs/bafkreifl4ivh2lg37qtekeix4godl4cw5wodxamekqschxwtz2m5ih3w4e?pinataGatewayToken=20pyTQbRQpnu0yB0b-H-O0LIargpkdPiguq5jcrAMG_LKmwQE2m7oFirjzcmrtCd",
                                 softCap: parseUnits((data?.softCap).toString(), data?.baseTokenDecimal).toString(),
                                 hardCap: parseUnits((data?.hardCap).toString(), data?.baseTokenDecimal).toString(),
                                 minInvestment: parseUnits((data?.minInvestment).toString(), data?.baseTokenDecimal).toString(),
@@ -367,7 +367,7 @@ function ListSTOModel(props) {
                                     baseToken: "",
                                     baseTokenDecimal: "",
                                     baseTokenBalance: "",
-                                    launchpadImage: "",
+                                    launchpadImage: "https://amaranth-impossible-crocodile-354.mypinata.cloud/ipfs/bafkreifl4ivh2lg37qtekeix4godl4cw5wodxamekqschxwtz2m5ih3w4e?pinataGatewayToken=20pyTQbRQpnu0yB0b-H-O0LIargpkdPiguq5jcrAMG_LKmwQE2m7oFirjzcmrtCd",
                                     launchpadTitle: "",
                                     softCap: "",
                                     hardCap: "",
@@ -402,9 +402,9 @@ function ListSTOModel(props) {
                                             issuer: Yup.string().required('Issuer is required').test('not-empty', 'Issuer is required', value => value && value.trim() !== ''),
                                             country: Yup.string().required('Country is required').test('not-empty', 'Country is required', value => value && value.trim() !== ''),
                                             investmentType: Yup.string().required('Investment type is required').test('not-empty', 'Investment type is required', value => value && value.trim() !== ''),
-                                            industry: Yup.string().required('Launchpad image is required').test('not-empty', 'Launchpad image is required', value => value && value.trim() !== ''),
-                                            overview: Yup.string().required('Launchpad image is required').test('not-empty', 'Launchpad image is required', value => value && value.trim() !== ''),
-                                            companyWebsite: Yup.string().required('Launchpad image is required').test('not-empty', 'Launchpad image is required', value => value && value.trim() !== '')
+                                            industry: Yup.string().required('Industry image is required').test('not-empty', 'Industry image is required', value => value && value.trim() !== ''),
+                                            overview: Yup.string().required('Overview image is required').test('not-empty', 'Overview image is required', value => value && value.trim() !== ''),
+                                            companyWebsite: Yup.string().required('website image is required').test('not-empty', 'website image is required', value => value && value.trim() !== '')
                                         })
                                     }
                                 >
