@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li:focus-visible {
+    outline: none;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+@layer base {
+    :root {
+        /*------Color variables------*/
+        --black_400: #a1a1aa;
+        --black_900: #0f1115;
+        --black_900_00: #0f111500;
+        --black_600_06: #00000099;
+        --black_900_01: #090b10;
+
+        --blue_gray_900: #111827;
+
+        --brand_color-0: #4f46e5;
+        /* primary (soft indigo) */
+        --brand_color-1: #71717a;
+        /* muted gray */
+
+        --cyan_a100: #94a3b8;
+        --cyan_a100_1e: #94a3b81e;
+        --cyan_a100_33: #94a3b833;
+
+        --deep_orange_800: #d97706;
+
+        --gray_400: #9ca3af;
+        --gray_400_01: #d1d5db;
+        --gray_50: #f9fafb;
+
+        --gray_900: #0b0e14;
+        --gray_900_01: #0b0e14;
+        --gray_900_02: #121622;
+        --gray_900_03: #0f1117;
+        --gray_900_04: #161a23;
+
+        --gray_900_7a: #0b0e147a;
+        --gray_900_99: #0b0e1499;
+
+        --green_800: #15803d;
+        --green_a200_1e: #22c55e1e;
+        --green_a200_33: #22c55e33;
+
+        --lime_900: #4d7c0f;
+
+        --red_a700: #dc2626;
+
+        --teal_a200: #5eead4;
+        --teal_a200_1e: #5eead41e;
+        --teal_a200_33: #5eead433;
+
+        --text: #e5e7eb;
+
+        --white_a700: #ffffff;
+        --white_a700_14: #ffffff14;
+        --white_a700_1e: #ffffff1e;
+        --white_a700_99: #ffffff99;
+
+        --yellow_900: #ca8a04;
+        --yellow_900_01: #eab308;
+        --yellow_900_02: #fde047;
+        --yellow_900_03: #facc15;
+
+        /*------Gradient variables------*/
+        --gradient4: 90deg, #4f46e5 0%, #4338ca 100%;
+
+        --gradient5: from 180deg at 50% 50%,
+            #c7d2fe -0.54deg,
+            #818cf8 138.99deg,
+            #6366f1 258.75deg,
+            #c7d2fe 359.46deg,
+            #818cf8 498.99deg;
+
+        --gradient5_12: from 180deg at 50% 50%,
+            rgba(199, 210, 254, 0.12) -0.54deg,
+            rgba(129, 140, 248, 0.12) 138.99deg,
+            rgba(99, 102, 241, 0.12) 258.75deg,
+            rgba(199, 210, 254, 0.12) 359.46deg,
+            rgba(129, 140, 248, 0.12) 498.99deg;
+    }
+}
+
+
+
+@layer components {
+
+    /*-------------------------------------
+  Container CSS
+--------------------------------------*/
+    .container-xs {
+        @apply w-full mx-auto max-w-[80.25rem];
+    }
+}
+
+body {
+    @apply bg-gray-900 text-text;
+}

@@ -1,0 +1,17 @@
+header .isActive {
+    background: linear-gradient(90deg, #6366f1 0%, #4f46e5 100%);
+
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header .isActive h6,
+header .isActive p {
+    font-weight: 700;
+}
+
+header h6,
+header p {
+    font-weight: 400;
+}

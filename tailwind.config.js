@@ -1,0 +1,75 @@
+module.exports = {
+    mode: "jit",
+    content: ["./src/**/**/*.{js,ts,jsx,tsx,html,mdx}", "./src/**/*.{js,ts,jsx,tsx,html,mdx}"],
+    darkMode: "class",
+    theme: {
+        screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+        extend: {
+            colors: {
+                black: {
+                    400: "var(--black_400)",
+                    900: "var(--black_900)",
+                    "900_00": "var(--black_900_00)",
+                    "600_06": "var(--black_600_06)",
+                    "900_01": "var(--black_900_01)",
+                },
+                blue_gray: { 900: "var(--blue_gray_900)" },
+                brand_color: { 0: "var(--brand_color-0)", 1: "var(--brand_color-1)" },
+                cyan: { a100: "var(--cyan_a100)", a100_1e: "var(--cyan_a100_1e)", a100_33: "var(--cyan_a100_33)" },
+                deep_orange: { 800: "var(--deep_orange_800)" },
+                gray: {
+                    50: "var(--gray_50)",
+                    400: "var(--gray_400)",
+                    900: "var(--gray_900)",
+                    "400_01": "var(--gray_400_01)",
+                    "900_01": "var(--gray_900_01)",
+                    "900_02": "var(--gray_900_02)",
+                    "900_03": "var(--gray_900_03)",
+                    "900_04": "var(--gray_900_04)",
+                    "900_7a": "var(--gray_900_7a)",
+                    "900_99": "var(--gray_900_99)",
+                },
+                green: { 800: "var(--green_800)", a200_1e: "var(--green_a200_1e)", a200_33: "var(--green_a200_33)" },
+                lime: { 900: "var(--lime_900)" },
+                red: { a700: "var(--red_a700)" },
+                teal: { a200: "var(--teal_a200)", a200_1e: "var(--teal_a200_1e)", a200_33: "var(--teal_a200_33)" },
+                text: "var(--text)",
+                white: {
+                    a700: "var(--white_a700)",
+                    a700_14: "var(--white_a700_14)",
+                    a700_1e: "var(--white_a700_1e)",
+                    a700_99: "var(--white_a700_99)",
+                },
+                yellow: {
+                    900: "var(--yellow_900)",
+                    "900_01": "var(--yellow_900_01)",
+                    "900_02": "var(--yellow_900_02)",
+                    "900_03": "var(--yellow_900_03)",
+                },
+            },
+
+            backgroundImage: {
+                /* Subtle, premium gradients */
+                gradient: "linear-gradient(90deg, #4f46e5, #4338ca)",
+                gradient1: "linear-gradient(180deg, #e5e7eb, #c7d2fe)",
+                gradient2: "linear-gradient(180deg, rgba(99,102,241,.12), rgba(129,140,248,.12))",
+                gradient3: "linear-gradient(to right, rgba(15,17,21,0), #0f1115)",
+            },
+
+            background: {
+                gradient4: "linear-gradient(90deg, #4f46e5 0%, #4338ca 100%)",
+
+                /* Replaced neon conic with muted indigo */
+                gradient5:
+                    "conic-gradient(from 180deg at 50% 50%, #c7d2fe, #818cf8, #6366f1, #c7d2fe)",
+            },
+
+            fontFamily: {
+                inter: "Inter",
+                syne: "Syne",
+            },
+        }
+
+    },
+    plugins: [require("@tailwindcss/forms")],
+};

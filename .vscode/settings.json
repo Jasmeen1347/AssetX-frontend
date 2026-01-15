@@ -1,0 +1,38 @@
+{
+    "editor.formatOnSave": true,
+    "editor.indentSize": "tabSize",
+    "editor.tabSize": 4,
+    "editor.autoIndent": "full",
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "[html]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescript]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+    },
+    "[css]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[json]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[scss]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+}
