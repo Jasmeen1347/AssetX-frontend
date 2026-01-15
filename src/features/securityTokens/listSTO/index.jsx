@@ -398,7 +398,7 @@ function ListSTOModel(props) {
                                     validationSchema={
                                         Yup.object({
                                             launchpadTitle: Yup.string().required('Title is required').test('not-empty', 'Title is required', value => value && value.trim() !== ''),
-                                            launchpadImage: Yup.string().required('Launchpad image is required').test('not-empty', 'Launchpad image is required', value => value && value.trim() !== ''),
+                                            launchpadImage: Yup.string().required('Launchpad image is required').test('not-empty', 'Launchpad image is required', value => "https://amaranth-impossible-crocodile-354.mypinata.cloud/ipfs/bafkreifl4ivh2lg37qtekeix4godl4cw5wodxamekqschxwtz2m5ih3w4e?pinataGatewayToken=20pyTQbRQpnu0yB0b-H-O0LIargpkdPiguq5jcrAMG_LKmwQE2m7oFirjzcmrtCd"),
                                             issuer: Yup.string().required('Issuer is required').test('not-empty', 'Issuer is required', value => value && value.trim() !== ''),
                                             country: Yup.string().required('Country is required').test('not-empty', 'Country is required', value => value && value.trim() !== ''),
                                             investmentType: Yup.string().required('Investment type is required').test('not-empty', 'Investment type is required', value => value && value.trim() !== ''),
